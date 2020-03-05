@@ -8,7 +8,7 @@ interface IUserInfo{
 const DemoInterface: React.FC=()=>{
     const firstUser = { 
         firstname: "Stewart",
-        lastname: "little"  
+        lastname: "Little"  
     };
 
     const [ userInfo, setUserInfo ] = useState<IUserInfo | null>();
@@ -16,9 +16,10 @@ const DemoInterface: React.FC=()=>{
 
     return(
         <div>
+            <h3>TypeScript: using an interface to pass an object to useState </h3>
             <div>First Name: { userInfo?.firstname } </div>
             <div>Last Name: { userInfo?.lastname } </div>
-            <button onClick={ ()=>{!userInfo ? setUserInfo(firstUser) : setUserInfo(null)} } > Change Name </button>
+            <button onClick={ ()=>{!userInfo ? setUserInfo(firstUser) : setUserInfo(null)} } > Change Full Name </button>
         </div>
     );
 

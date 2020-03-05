@@ -1,12 +1,10 @@
-import React, { useContext, useReducer } from 'react';
-
-interface IProps {
-
-};
+import React, { createContext, useContext, useReducer } from 'react';
+// creating a redux-like Store in React/Context and TypeScript
 
 
 
-const Store: React.FC<IProps> =(props)=>{
+
+const Store: React.FC=()=>{
 
     return(
         <div></div>

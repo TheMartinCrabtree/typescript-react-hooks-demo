@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+// basic example of using useState with TypeScript
+
 
 const TestComponent: React.FC=()=>{
     const defaultName: string = "Trogdor!";
@@ -7,9 +9,9 @@ const TestComponent: React.FC=()=>{
     return(
         <div>
             <div>The current name is: { name } </div>
-            <button onClick={ ()=>{!!name ? setName(defaultName) : setName(null)} } > Change Name </button>
+            <button onClick={ ()=>{!name ? setName(defaultName) : setName(null)} } > Change Name </button>
         </div>
     );
 }
 
-export default TestComponent
+export default TestComponent;

@@ -16,7 +16,7 @@ const DemoInterface: React.FC=()=>{
 
     return(
         <div>
-            <h3>TypeScript: using an interface to pass an object to useState </h3>
+            <h3>TypeScript: using an interface to pass an object to useState() </h3>
             <div>First Name: { userInfo?.firstname } </div>
             <div>Last Name: { userInfo?.lastname } </div>
             <button onClick={ ()=>{!userInfo ? setUserInfo(firstUser) : setUserInfo(null)} } > Change Full Name </button>

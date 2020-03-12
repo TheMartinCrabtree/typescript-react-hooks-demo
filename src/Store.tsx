@@ -11,7 +11,9 @@ interface IInitialState{
 const Store: React.FC=()=>{
 
     return(
-        <div></div>
+        <div>
+            { /*  code can go here  */}
+        </div>
     )
 }
 

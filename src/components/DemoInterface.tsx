@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 // using interface to pass objects to useState while using TypeScript
 interface IUserInfo{
@@ -6,7 +7,7 @@ interface IUserInfo{
 }
 
 const DemoInterface: React.FC=()=>{
-    // useState()
+    // useState() accepts either null, or an object that matches the format of IUserInfo
     // declaring a local state variable userInfo, and the update function setUserInfo()
     const [ userInfo, setUserInfo ] = useState<IUserInfo | null>();
 
@@ -15,7 +16,6 @@ const DemoInterface: React.FC=()=>{
         firstname: "Stewart",
         lastname: "Little"  
     };
-
 
     return(
         <div>

@@ -6,12 +6,15 @@ interface IUserInfo{
 }
 
 const DemoInterface: React.FC=()=>{
+    // useState()
+    // declaring a local state variable userInfo, and the update function setUserInfo()
+    const [ userInfo, setUserInfo ] = useState<IUserInfo | null>();
+
+    // the firstUser object, which will be passed into the setUserInfo update function
     const firstUser = { 
         firstname: "Stewart",
         lastname: "Little"  
     };
-
-    const [ userInfo, setUserInfo ] = useState<IUserInfo | null>();
 
 
     return(

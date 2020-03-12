@@ -4,6 +4,7 @@ import React, { createContext, useContext, useReducer } from 'react';
 interface IInitialState{
     username: "string";
     saying: "string";
+    count?: number;
 }
 
 
